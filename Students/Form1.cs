@@ -16,5 +16,30 @@ namespace Students
         {
             InitializeComponent();
         }
+
+        private void ProfilePhoto_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBoxLastName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBoxName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Email_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
