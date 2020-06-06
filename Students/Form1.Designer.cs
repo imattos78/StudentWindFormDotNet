@@ -49,15 +49,15 @@
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureProfilePhoto = new System.Windows.Forms.PictureBox();
+            this.pictureLogo = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.ProfilePhoto.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureProfilePhoto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -65,7 +65,7 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.BackColor = System.Drawing.Color.Navy;
-            this.groupBox1.Controls.Add(this.pictureBox2);
+            this.groupBox1.Controls.Add(this.pictureLogo);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(-1, -6);
             this.groupBox1.Name = "groupBox1";
@@ -81,9 +81,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(296, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(255, 34);
+            this.label1.Size = new System.Drawing.Size(239, 34);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Student Systems";
+            this.label1.Text = "Student System";
             // 
             // groupBox2
             // 
@@ -128,7 +128,7 @@
             this.Email.Multiline = true;
             this.Email.Name = "Email";
             this.Email.Size = new System.Drawing.Size(145, 23);
-            this.Email.TabIndex = 9;
+            this.Email.TabIndex = 5;
             this.Email.TextChanged += new System.EventHandler(this.Email_TextChanged);
             // 
             // labelID
@@ -151,7 +151,7 @@
             this.IdStudent.Multiline = true;
             this.IdStudent.Name = "IdStudent";
             this.IdStudent.Size = new System.Drawing.Size(145, 23);
-            this.IdStudent.TabIndex = 7;
+            this.IdStudent.TabIndex = 2;
             // 
             // TextBoxLastName
             // 
@@ -160,7 +160,7 @@
             this.TextBoxLastName.Multiline = true;
             this.TextBoxLastName.Name = "TextBoxLastName";
             this.TextBoxLastName.Size = new System.Drawing.Size(145, 23);
-            this.TextBoxLastName.TabIndex = 6;
+            this.TextBoxLastName.TabIndex = 4;
             this.TextBoxLastName.TextChanged += new System.EventHandler(this.TextBoxLastName_TextChanged);
             // 
             // TextBoxName
@@ -170,7 +170,7 @@
             this.TextBoxName.Multiline = true;
             this.TextBoxName.Name = "TextBoxName";
             this.TextBoxName.Size = new System.Drawing.Size(145, 23);
-            this.TextBoxName.TabIndex = 2;
+            this.TextBoxName.TabIndex = 3;
             this.TextBoxName.TextChanged += new System.EventHandler(this.TextBoxName_TextChanged);
             // 
             // labelLastName
@@ -203,10 +203,10 @@
             // 
             this.ProfilePhoto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ProfilePhoto.Controls.Add(this.pictureBox1);
+            this.ProfilePhoto.Controls.Add(this.pictureProfilePhoto);
             this.ProfilePhoto.Location = new System.Drawing.Point(93, 31);
             this.ProfilePhoto.Name = "ProfilePhoto";
-            this.ProfilePhoto.Size = new System.Drawing.Size(157, 135);
+            this.ProfilePhoto.Size = new System.Drawing.Size(157, 157);
             this.ProfilePhoto.TabIndex = 1;
             this.ProfilePhoto.TabStop = false;
             this.ProfilePhoto.Enter += new System.EventHandler(this.ProfilePhoto_Enter);
@@ -295,7 +295,7 @@
             this.buttonCancel.Location = new System.Drawing.Point(230, 291);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(86, 30);
-            this.buttonCancel.TabIndex = 13;
+            this.buttonCancel.TabIndex = 8;
             this.buttonCancel.UseVisualStyleBackColor = false;
             // 
             // buttonDelete
@@ -311,7 +311,7 @@
             this.buttonDelete.Location = new System.Drawing.Point(126, 291);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(86, 30);
-            this.buttonDelete.TabIndex = 12;
+            this.buttonDelete.TabIndex = 7;
             this.buttonDelete.UseVisualStyleBackColor = false;
             // 
             // buttonAdd
@@ -325,29 +325,29 @@
             this.buttonAdd.Location = new System.Drawing.Point(23, 291);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(86, 30);
-            this.buttonAdd.TabIndex = 11;
+            this.buttonAdd.TabIndex = 6;
             this.buttonAdd.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
+            // pictureProfilePhoto
             // 
-            this.pictureBox1.Image = global::Students.Properties.Resources.llama_animal;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 19);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(110, 99);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pictureProfilePhoto.Image = global::Students.Properties.Resources.llama_animal;
+            this.pictureProfilePhoto.Location = new System.Drawing.Point(14, 15);
+            this.pictureProfilePhoto.Name = "pictureProfilePhoto";
+            this.pictureProfilePhoto.Size = new System.Drawing.Size(130, 130);
+            this.pictureProfilePhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureProfilePhoto.TabIndex = 0;
+            this.pictureProfilePhoto.TabStop = false;
             // 
-            // pictureBox2
+            // pictureLogo
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Image = global::Students.Properties.Resources.universidades;
-            this.pictureBox2.Location = new System.Drawing.Point(23, 15);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(65, 65);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.pictureLogo.BackColor = System.Drawing.Color.White;
+            this.pictureLogo.Image = global::Students.Properties.Resources.universidades;
+            this.pictureLogo.Location = new System.Drawing.Point(23, 15);
+            this.pictureLogo.Name = "pictureLogo";
+            this.pictureLogo.Size = new System.Drawing.Size(65, 65);
+            this.pictureLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureLogo.TabIndex = 1;
+            this.pictureLogo.TabStop = false;
             // 
             // Form1
             // 
@@ -373,8 +373,8 @@
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureProfilePhoto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -402,7 +402,7 @@
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Button buttonCancel;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureLogo;
+        private System.Windows.Forms.PictureBox pictureProfilePhoto;
     }
 }
