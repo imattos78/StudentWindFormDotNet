@@ -38,14 +38,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.ProfilePhoto = new System.Windows.Forms.GroupBox();
             this.TextBoxSerch = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.labelName = new System.Windows.Forms.Label();
+            this.labelLastName = new System.Windows.Forms.Label();
             this.TextBoxName = new System.Windows.Forms.TextBox();
             this.TextBoxLastName = new System.Windows.Forms.TextBox();
             this.IdStudent = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.labelID = new System.Windows.Forms.Label();
             this.Email = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.labelEmail = new System.Windows.Forms.Label();
+            this.buttonDelete = new System.Windows.Forms.Button();
+            this.buttonAdd = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -69,19 +71,21 @@
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox2.BackColor = System.Drawing.Color.White;
-            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.buttonDelete);
+            this.groupBox2.Controls.Add(this.buttonAdd);
+            this.groupBox2.Controls.Add(this.labelEmail);
             this.groupBox2.Controls.Add(this.Email);
-            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.labelID);
             this.groupBox2.Controls.Add(this.IdStudent);
             this.groupBox2.Controls.Add(this.TextBoxLastName);
             this.groupBox2.Controls.Add(this.TextBoxName);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.labelLastName);
+            this.groupBox2.Controls.Add(this.labelName);
             this.groupBox2.Controls.Add(this.ProfilePhoto);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Location = new System.Drawing.Point(-1, 130);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(341, 303);
+            this.groupBox2.Size = new System.Drawing.Size(341, 369);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
@@ -94,7 +98,7 @@
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Location = new System.Drawing.Point(346, 130);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(499, 303);
+            this.groupBox3.Size = new System.Drawing.Size(499, 369);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             // 
@@ -179,31 +183,31 @@
             this.TextBoxSerch.Size = new System.Drawing.Size(208, 23);
             this.TextBoxSerch.TabIndex = 1;
             // 
-            // label5
+            // labelName
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.labelName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Navy;
-            this.label5.Location = new System.Drawing.Point(176, 189);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 18);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Name";
+            this.labelName.AutoSize = true;
+            this.labelName.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelName.ForeColor = System.Drawing.Color.Navy;
+            this.labelName.Location = new System.Drawing.Point(176, 189);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(40, 18);
+            this.labelName.TabIndex = 4;
+            this.labelName.Text = "Name";
             // 
-            // label6
+            // labelLastName
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.labelLastName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Navy;
-            this.label6.Location = new System.Drawing.Point(15, 231);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 18);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Last Name";
+            this.labelLastName.AutoSize = true;
+            this.labelLastName.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLastName.ForeColor = System.Drawing.Color.Navy;
+            this.labelLastName.Location = new System.Drawing.Point(15, 231);
+            this.labelLastName.Name = "labelLastName";
+            this.labelLastName.Size = new System.Drawing.Size(80, 18);
+            this.labelLastName.TabIndex = 5;
+            this.labelLastName.Text = "Last Name";
             // 
             // TextBoxName
             // 
@@ -233,19 +237,19 @@
             this.IdStudent.Size = new System.Drawing.Size(145, 23);
             this.IdStudent.TabIndex = 7;
             // 
-            // label7
+            // labelID
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.labelID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Navy;
-            this.label7.Location = new System.Drawing.Point(15, 187);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(88, 18);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "ID-Student";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.labelID.AutoSize = true;
+            this.labelID.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelID.ForeColor = System.Drawing.Color.Navy;
+            this.labelID.Location = new System.Drawing.Point(15, 187);
+            this.labelID.Name = "labelID";
+            this.labelID.Size = new System.Drawing.Size(88, 18);
+            this.labelID.TabIndex = 8;
+            this.labelID.Text = "ID-Student";
+            this.labelID.Click += new System.EventHandler(this.label7_Click);
             // 
             // Email
             // 
@@ -256,18 +260,48 @@
             this.Email.TabIndex = 9;
             this.Email.TextChanged += new System.EventHandler(this.Email_TextChanged);
             // 
-            // label8
+            // labelEmail
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.labelEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Navy;
-            this.label8.Location = new System.Drawing.Point(176, 231);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(48, 18);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Email";
+            this.labelEmail.AutoSize = true;
+            this.labelEmail.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEmail.ForeColor = System.Drawing.Color.Navy;
+            this.labelEmail.Location = new System.Drawing.Point(176, 231);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(48, 18);
+            this.labelEmail.TabIndex = 10;
+            this.labelEmail.Text = "Email";
+            // 
+            // buttonDelete
+            // 
+            this.buttonDelete.BackColor = System.Drawing.Color.Navy;
+            this.buttonDelete.BackgroundImage = global::Students.Properties.Resources.baseline_remove_circle_outline_white_24dp2;
+            this.buttonDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonDelete.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonDelete.FlatAppearance.BorderSize = 0;
+            this.buttonDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.buttonDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDelete.Location = new System.Drawing.Point(187, 291);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(86, 30);
+            this.buttonDelete.TabIndex = 12;
+            this.buttonDelete.UseVisualStyleBackColor = false;
+            // 
+            // buttonAdd
+            // 
+            this.buttonAdd.BackColor = System.Drawing.Color.Navy;
+            this.buttonAdd.FlatAppearance.BorderSize = 0;
+            this.buttonAdd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
+            this.buttonAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAdd.Image = global::Students.Properties.Resources.baseline_add_circle_outline_white_24dp;
+            this.buttonAdd.Location = new System.Drawing.Point(64, 291);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(86, 30);
+            this.buttonAdd.TabIndex = 11;
+            this.buttonAdd.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -275,7 +309,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(843, 429);
+            this.ClientSize = new System.Drawing.Size(843, 495);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -308,14 +342,16 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox ProfilePhoto;
         private System.Windows.Forms.TextBox TextBoxSerch;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelLastName;
+        private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.TextBox TextBoxLastName;
         private System.Windows.Forms.TextBox TextBoxName;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label labelID;
         private System.Windows.Forms.TextBox IdStudent;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label labelEmail;
         private System.Windows.Forms.TextBox Email;
+        private System.Windows.Forms.Button buttonDelete;
+        private System.Windows.Forms.Button buttonAdd;
     }
 }
 
