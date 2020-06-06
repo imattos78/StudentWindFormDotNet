@@ -62,18 +62,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -90,16 +90,31 @@
     <None Include="Resources\baseline_remove_circle_outline_white_24dp1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\baseline_remove_circle_outline_white_18dp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\baseline_add_circle_outline_white_18dp.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\baseline_remove_circle_outline_white_24dp2.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\baseline_add_circle_outline_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_add_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_remove_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baseline_clear_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\llama_animal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\universidad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\universidades.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

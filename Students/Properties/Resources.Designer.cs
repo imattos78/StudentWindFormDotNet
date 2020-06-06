@@ -63,16 +63,6 @@ namespace Students.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap baseline_add_circle_outline_white_18dp {
-            get {
-                object obj = ResourceManager.GetObject("baseline_add_circle_outline_white_18dp", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap baseline_add_circle_outline_white_24dp {
             get {
                 object obj = ResourceManager.GetObject("baseline_add_circle_outline_white_24dp", resourceCulture);
@@ -83,9 +73,19 @@ namespace Students.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap baseline_remove_circle_outline_white_18dp {
+        internal static System.Drawing.Bitmap baseline_add_white_24dp {
             get {
-                object obj = ResourceManager.GetObject("baseline_remove_circle_outline_white_18dp", resourceCulture);
+                object obj = ResourceManager.GetObject("baseline_add_white_24dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap baseline_clear_white_24dp {
+            get {
+                object obj = ResourceManager.GetObject("baseline_clear_white_24dp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -116,6 +116,56 @@ namespace Students.Properties {
         internal static System.Drawing.Bitmap baseline_remove_circle_outline_white_24dp2 {
             get {
                 object obj = ResourceManager.GetObject("baseline_remove_circle_outline_white_24dp2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap baseline_remove_white_24dp {
+            get {
+                object obj = ResourceManager.GetObject("baseline_remove_white_24dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap llama_animal {
+            get {
+                object obj = ResourceManager.GetObject("llama_animal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo {
+            get {
+                object obj = ResourceManager.GetObject("logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap universidad {
+            get {
+                object obj = ResourceManager.GetObject("universidad", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap universidades {
+            get {
+                object obj = ResourceManager.GetObject("universidades", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
