@@ -26,11 +26,42 @@ namespace Students
 
         private void TextBoxLastName_TextChanged(object sender, EventArgs e)
         {
+            //Check if the texbox is empty
+            //Logic: .Text property and .Equals() method checks TextBoxLastName
+            if (TextBoxLastName.Text.Equals("")) 
+            {
 
+                //Change the label color when the text box is empty or when is being erased
+                //Logic: .ForeColor assign Color.LightSlateGray to the labelLastName if the condition is TRUE
+                labelLastName.ForeColor = Color.LightSlateGray;  
+            
+            }
+            else
+            {
+                //Logic: .ForeColor assign Color.Green to the labelLastName if the condition is FALSE
+                //Change the label color if the textbox is filling out
+                labelLastName.ForeColor = Color.Green;  
+                labelLastName.Text = "Last Name";
+            }
         }
 
         private void TextBoxName_TextChanged(object sender, EventArgs e)
         {
+            //Check if the texbox is empty
+            //Logic: .Text property and .Equals() method checks TextBoxName
+            if (TextBoxName.Text.Equals(""))
+            {
+                //Change the label color when the text box is empty or when is being erased
+                //Logic: .ForeColor assign Color.LightSlateGray to the labelName if the condition is TRUE
+                labelName.ForeColor = Color.LightSlateGray;
+            }
+            else
+            {
+                //Logic: .ForeColor assign Color.Green to the labelLastName if the condition is FALSE
+                //Change the label color if the textbox is filling out
+                labelName.ForeColor = Color.Green;
+                labelName.Text = "Name";
+            }
 
         }
 
@@ -41,12 +72,75 @@ namespace Students
 
         private void Email_TextChanged(object sender, EventArgs e)
         {
-
+            //Check if the texbox is empty
+            //Logic: .Text property and .Equals() method checks Email Textbox
+            if (Email.Text.Equals(""))
+            {
+                //Change the label color when the text box is empty or when is being erased
+                //Logic: .ForeColor assign Color.LightSlateGray to the labelEmail if the condition is TRUE
+                labelEmail.ForeColor = Color.LightSlateGray;
+            }
+            else
+            {
+                //Logic: .ForeColor assign Color.Green to the labelLastName if the condition is FALSE
+                //Change the label color if the textbox is filling out
+                labelEmail.ForeColor = Color.Green;
+                labelEmail.Text = "E-mail";
+            }
         }
 
         private void PictureBoxPhoto_Click(object sender, EventArgs e)
         {
             student.UploadImage(PictureBoxPhoto);
+        }
+
+        private void IdStudent_TextChanged(object sender, EventArgs e)
+        {
+            //Check if the texbox is empty
+            //Logic: .Text property and .Equals() method checks IdStudent Textbox
+            if (IdStudent.Text.Equals(""))
+            {
+                //Change the label color when the text box is empty or when is being erased
+                //Logic: .ForeColor assign Color.LightSlateGray to the labelId if the condition is TRUE
+                labelId.ForeColor = Color.LightSlateGray;
+            }
+            else
+            {
+                //Logic: .ForeColor assign Color.Green to the labelLastName if the condition is FALSE
+                //Change the label color if the textbox is filling out
+                labelId.ForeColor = Color.Green;
+                labelId.Text = "Student ID";
+            }
+        }
+
+        private void IdStudent_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void TextBoxName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void TextBoxLastName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void Email_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void TextBoxSerch_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void TextBoxSerch_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
         }
     }
 }
