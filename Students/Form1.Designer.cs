@@ -142,7 +142,7 @@
             this.labelID.Name = "labelID";
             this.labelID.Size = new System.Drawing.Size(88, 18);
             this.labelID.TabIndex = 8;
-            this.labelID.Text = "ID-Student";
+            this.labelID.Text = "Student Id";
             this.labelID.Click += new System.EventHandler(this.label7_Click);
             // 
             // IdStudent
