@@ -13,10 +13,17 @@ namespace Students
 {
     public partial class Form1 : Form
     {
-        private LStudents student = new LStudents();
+        private LStudents student;
         public Form1()
         {
             InitializeComponent();
+
+            var listTextBox = new List<TextBox>();
+            listTextBox.Add(IdStudent);
+            listTextBox.Add(TextBoxName);
+            listTextBox.Add(TextBoxLastName);
+            listTextBox.Add(Email);
+            student = new LStudents(listTextBox);
         }
 
         private void ProfilePhoto_Enter(object sender, EventArgs e)
@@ -115,7 +122,7 @@ namespace Students
 
         private void IdStudent_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            student.textBoxEvent.numberKeyPress(e);
         }
 
         private void TextBoxName_KeyPress(object sender, KeyPressEventArgs e)
@@ -126,7 +133,7 @@ namespace Students
 
         private void TextBoxLastName_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            student.textBoxEvent.textKeyPress(e);
         }
 
         private void Email_KeyPress(object sender, KeyPressEventArgs e)
