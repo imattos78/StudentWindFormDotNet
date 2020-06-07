@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Library\Librarys.cs" />
+    <Compile Include="Library\TextBoxEvent.cs" />
     <Compile Include="Library\Uploadimage.cs" />
     <Compile Include="LStudents.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

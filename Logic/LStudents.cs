@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Logic
 {
-    public class LStudents : Uploadimage
+    public class LStudents : Librarys
     {
         
     }

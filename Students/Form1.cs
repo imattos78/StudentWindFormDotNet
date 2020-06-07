@@ -91,7 +91,7 @@ namespace Students
 
         private void PictureBoxPhoto_Click(object sender, EventArgs e)
         {
-            student.UploadImage(PictureBoxPhoto);
+            student.uploadimage.UploadImage(PictureBoxPhoto);
         }
 
         private void IdStudent_TextChanged(object sender, EventArgs e)
@@ -120,6 +120,7 @@ namespace Students
 
         private void TextBoxName_KeyPress(object sender, KeyPressEventArgs e)
         {
+            student.textBoxEvent.textKeyPress(e);
 
         }
 
