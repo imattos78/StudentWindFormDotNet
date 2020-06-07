@@ -116,5 +116,11 @@
   <ItemGroup>
     <None Include="Resources\universidades.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logic\Logic.csproj">
+      <Project>{31cac845-7e71-4071-b223-5cd287e97aa9}</Project>
+      <Name>Logic</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

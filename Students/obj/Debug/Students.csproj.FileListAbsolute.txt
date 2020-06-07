@@ -8,3 +8,6 @@ C:\Users\nacho\source\repos\WindFormProject\Students\Students\obj\Debug\Students
 C:\Users\nacho\source\repos\WindFormProject\Students\Students\obj\Debug\Students.csproj.CoreCompileInputs.cache
 C:\Users\nacho\source\repos\WindFormProject\Students\Students\obj\Debug\Students.exe
 C:\Users\nacho\source\repos\WindFormProject\Students\Students\obj\Debug\Students.pdb
+C:\Users\nacho\source\repos\WindFormProject\Students\Students\bin\Debug\Logic.dll
+C:\Users\nacho\source\repos\WindFormProject\Students\Students\bin\Debug\Logic.pdb
+C:\Users\nacho\source\repos\WindFormProject\Students\Students\obj\Debug\Students.csproj.CopyComplete

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Logic;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace Students
 {
     public partial class Form1 : Form
     {
+        private LStudents student = new LStudents();
         public Form1()
         {
             InitializeComponent();
@@ -40,6 +42,11 @@ namespace Students
         private void Email_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void PictureBoxPhoto_Click(object sender, EventArgs e)
+        {
+            student.UploadImage(PictureBoxPhoto);
         }
     }
 }

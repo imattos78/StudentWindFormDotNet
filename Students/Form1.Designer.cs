@@ -29,8 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureLogo = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.buttonCancel = new System.Windows.Forms.Button();
+            this.buttonDelete = new System.Windows.Forms.Button();
+            this.buttonAdd = new System.Windows.Forms.Button();
             this.labelEmail = new System.Windows.Forms.Label();
             this.Email = new System.Windows.Forms.TextBox();
             this.labelID = new System.Windows.Forms.Label();
@@ -40,24 +44,20 @@
             this.labelLastName = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
             this.ProfilePhoto = new System.Windows.Forms.GroupBox();
+            this.PictureBoxPhoto = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.TextBoxSerch = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.buttonCancel = new System.Windows.Forms.Button();
-            this.buttonDelete = new System.Windows.Forms.Button();
-            this.buttonAdd = new System.Windows.Forms.Button();
-            this.pictureProfilePhoto = new System.Windows.Forms.PictureBox();
-            this.pictureLogo = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.ProfilePhoto.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPhoto)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureProfilePhoto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -72,6 +72,17 @@
             this.groupBox1.Size = new System.Drawing.Size(846, 92);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // pictureLogo
+            // 
+            this.pictureLogo.BackColor = System.Drawing.Color.White;
+            this.pictureLogo.Image = global::Students.Properties.Resources.universidades;
+            this.pictureLogo.Location = new System.Drawing.Point(23, 15);
+            this.pictureLogo.Name = "pictureLogo";
+            this.pictureLogo.Size = new System.Drawing.Size(65, 65);
+            this.pictureLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureLogo.TabIndex = 1;
+            this.pictureLogo.TabStop = false;
             // 
             // label1
             // 
@@ -108,6 +119,52 @@
             this.groupBox2.Size = new System.Drawing.Size(341, 383);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
+            // 
+            // buttonCancel
+            // 
+            this.buttonCancel.BackColor = System.Drawing.Color.Navy;
+            this.buttonCancel.BackgroundImage = global::Students.Properties.Resources.baseline_clear_white_24dp;
+            this.buttonCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonCancel.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonCancel.FlatAppearance.BorderSize = 0;
+            this.buttonCancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.buttonCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCancel.Location = new System.Drawing.Point(230, 291);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(86, 30);
+            this.buttonCancel.TabIndex = 8;
+            this.buttonCancel.UseVisualStyleBackColor = false;
+            // 
+            // buttonDelete
+            // 
+            this.buttonDelete.BackColor = System.Drawing.Color.Navy;
+            this.buttonDelete.BackgroundImage = global::Students.Properties.Resources.baseline_remove_white_24dp;
+            this.buttonDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonDelete.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonDelete.FlatAppearance.BorderSize = 0;
+            this.buttonDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.buttonDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDelete.Location = new System.Drawing.Point(126, 291);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(86, 30);
+            this.buttonDelete.TabIndex = 7;
+            this.buttonDelete.UseVisualStyleBackColor = false;
+            // 
+            // buttonAdd
+            // 
+            this.buttonAdd.BackColor = System.Drawing.Color.Navy;
+            this.buttonAdd.FlatAppearance.BorderSize = 0;
+            this.buttonAdd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
+            this.buttonAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAdd.Image = global::Students.Properties.Resources.baseline_add_white_24dp;
+            this.buttonAdd.Location = new System.Drawing.Point(23, 291);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(86, 30);
+            this.buttonAdd.TabIndex = 6;
+            this.buttonAdd.UseVisualStyleBackColor = false;
             // 
             // labelEmail
             // 
@@ -203,13 +260,24 @@
             // 
             this.ProfilePhoto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ProfilePhoto.Controls.Add(this.pictureProfilePhoto);
+            this.ProfilePhoto.Controls.Add(this.PictureBoxPhoto);
             this.ProfilePhoto.Location = new System.Drawing.Point(93, 31);
             this.ProfilePhoto.Name = "ProfilePhoto";
             this.ProfilePhoto.Size = new System.Drawing.Size(157, 157);
             this.ProfilePhoto.TabIndex = 1;
             this.ProfilePhoto.TabStop = false;
             this.ProfilePhoto.Enter += new System.EventHandler(this.ProfilePhoto_Enter);
+            // 
+            // PictureBoxPhoto
+            // 
+            this.PictureBoxPhoto.Image = global::Students.Properties.Resources.llama_animal;
+            this.PictureBoxPhoto.Location = new System.Drawing.Point(14, 15);
+            this.PictureBoxPhoto.Name = "PictureBoxPhoto";
+            this.PictureBoxPhoto.Size = new System.Drawing.Size(130, 130);
+            this.PictureBoxPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBoxPhoto.TabIndex = 0;
+            this.PictureBoxPhoto.TabStop = false;
+            this.PictureBoxPhoto.Click += new System.EventHandler(this.PictureBoxPhoto_Click);
             // 
             // label3
             // 
@@ -282,73 +350,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Serch";
             // 
-            // buttonCancel
-            // 
-            this.buttonCancel.BackColor = System.Drawing.Color.Navy;
-            this.buttonCancel.BackgroundImage = global::Students.Properties.Resources.baseline_clear_white_24dp;
-            this.buttonCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonCancel.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.buttonCancel.FlatAppearance.BorderSize = 0;
-            this.buttonCancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
-            this.buttonCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
-            this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCancel.Location = new System.Drawing.Point(230, 291);
-            this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(86, 30);
-            this.buttonCancel.TabIndex = 8;
-            this.buttonCancel.UseVisualStyleBackColor = false;
-            // 
-            // buttonDelete
-            // 
-            this.buttonDelete.BackColor = System.Drawing.Color.Navy;
-            this.buttonDelete.BackgroundImage = global::Students.Properties.Resources.baseline_remove_white_24dp;
-            this.buttonDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonDelete.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.buttonDelete.FlatAppearance.BorderSize = 0;
-            this.buttonDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.buttonDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
-            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDelete.Location = new System.Drawing.Point(126, 291);
-            this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(86, 30);
-            this.buttonDelete.TabIndex = 7;
-            this.buttonDelete.UseVisualStyleBackColor = false;
-            // 
-            // buttonAdd
-            // 
-            this.buttonAdd.BackColor = System.Drawing.Color.Navy;
-            this.buttonAdd.FlatAppearance.BorderSize = 0;
-            this.buttonAdd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
-            this.buttonAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
-            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAdd.Image = global::Students.Properties.Resources.baseline_add_white_24dp;
-            this.buttonAdd.Location = new System.Drawing.Point(23, 291);
-            this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(86, 30);
-            this.buttonAdd.TabIndex = 6;
-            this.buttonAdd.UseVisualStyleBackColor = false;
-            // 
-            // pictureProfilePhoto
-            // 
-            this.pictureProfilePhoto.Image = global::Students.Properties.Resources.llama_animal;
-            this.pictureProfilePhoto.Location = new System.Drawing.Point(14, 15);
-            this.pictureProfilePhoto.Name = "pictureProfilePhoto";
-            this.pictureProfilePhoto.Size = new System.Drawing.Size(130, 130);
-            this.pictureProfilePhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureProfilePhoto.TabIndex = 0;
-            this.pictureProfilePhoto.TabStop = false;
-            // 
-            // pictureLogo
-            // 
-            this.pictureLogo.BackColor = System.Drawing.Color.White;
-            this.pictureLogo.Image = global::Students.Properties.Resources.universidades;
-            this.pictureLogo.Location = new System.Drawing.Point(23, 15);
-            this.pictureLogo.Name = "pictureLogo";
-            this.pictureLogo.Size = new System.Drawing.Size(65, 65);
-            this.pictureLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureLogo.TabIndex = 1;
-            this.pictureLogo.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -366,15 +367,15 @@
             this.Text = "Student systems";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ProfilePhoto.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPhoto)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureProfilePhoto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -403,6 +404,6 @@
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.PictureBox pictureLogo;
-        private System.Windows.Forms.PictureBox pictureProfilePhoto;
+        private System.Windows.Forms.PictureBox PictureBoxPhoto;
     }
 }
