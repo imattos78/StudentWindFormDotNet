@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureLogo = new System.Windows.Forms.PictureBox();
             this.labelHeader = new System.Windows.Forms.Label();
@@ -51,6 +52,7 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.TextBoxSerch = new System.Windows.Forms.TextBox();
             this.labelSerch = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -58,6 +60,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPhoto)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -355,6 +358,10 @@
             this.labelSerch.TabIndex = 0;
             this.labelSerch.Text = "Serch";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -381,6 +388,7 @@
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -410,5 +418,6 @@
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.PictureBox pictureLogo;
         private System.Windows.Forms.PictureBox PictureBoxPhoto;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

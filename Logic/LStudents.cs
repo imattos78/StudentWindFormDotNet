@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -26,6 +27,7 @@ namespace Logic
                 listLabel[0].Text = "ID required";
                 listLabel[0].ForeColor = Color.Red;
                 listTextBox[0].Focus();
+            
             }
             else
             {
@@ -53,7 +55,7 @@ namespace Logic
                         }
                         else
                         {
-
+                           
                         }
 
                     }

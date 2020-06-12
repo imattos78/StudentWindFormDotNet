@@ -21,7 +21,7 @@ namespace Logic.Library
             else if(char.IsSeparator(e.KeyChar)) { e.Handled = false; }
             else { e.Handled = true; }
         }
-        public void numberKeyPress(KeyPressEventArgs e)
+        public void numberKeyPress(KeyPressEventArgs e) 
         {
             //Condition that allow us enter a text type data ONLY
             if (char.IsDigit(e.KeyChar)) { e.Handled = false; }

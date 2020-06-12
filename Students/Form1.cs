@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -13,7 +14,7 @@ namespace Students
 {
     public partial class Form1 : Form
     {
-        private LStudents student;
+        private Logic.LStudents student;
         public Form1()
         {
             InitializeComponent();
@@ -28,7 +29,7 @@ namespace Students
             listLabel.Add(labelName);
             listLabel.Add(labelLastName);
             listLabel.Add(labelEmail);
-            student = new LStudents(listTextBox, listLabel);
+            student = new Logic.LStudents(listTextBox, listLabel);
         }
 
         private void ProfilePhoto_Enter(object sender, EventArgs e)
@@ -84,6 +85,7 @@ namespace Students
 
         private void Email_TextChanged(object sender, EventArgs e)
         {
+
             //Check if the texbox is empty
             //Logic: .Text property and .Equals() method checks Email Textbox
             if (Email.Text.Equals(""))
@@ -91,6 +93,7 @@ namespace Students
                 //Change the label color when the text box is empty or when is being erased
                 //Logic: .ForeColor assign Color.LightSlateGray to the labelEmail if the condition is TRUE
                 labelEmail.ForeColor = Color.LightSlateGray;
+               
             }
             else
             {
@@ -98,6 +101,18 @@ namespace Students
                 //Change the label color if the textbox is filling out
                 labelEmail.ForeColor = Color.Green;
                 labelEmail.Text = "E-mail";
+            }
+            //Regular expression used to verify the correct format of an email 
+            string pattern = "^([0-9a-zA-Z]([-\\.\\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\\w]*[0-9a-zA-Z]\\.)+[a-zA-Z]{2,9})$";
+
+            if (Regex.IsMatch(Email.Text, pattern))
+            {
+                errorProvider1.Clear();
+            }
+            else
+            {
+                errorProvider1.SetError(Email, "Provide valid email address");
+                labelEmail.ForeColor = Color.Red;
             }
         }
 
@@ -127,7 +142,9 @@ namespace Students
 
         private void IdStudent_KeyPress(object sender, KeyPressEventArgs e)
         {
-            student.textBoxEvent.numberKeyPress(e);
+           
+                student.textBoxEvent.numberKeyPress(e);   
+
         }
 
         private void TextBoxName_KeyPress(object sender, KeyPressEventArgs e)
