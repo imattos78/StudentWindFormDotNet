@@ -88,11 +88,11 @@
             // 
             this.labelHeader.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.labelHeader.AutoSize = true;
-            this.labelHeader.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHeader.Font = new System.Drawing.Font("Yu Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHeader.ForeColor = System.Drawing.Color.White;
-            this.labelHeader.Location = new System.Drawing.Point(296, 30);
+            this.labelHeader.Location = new System.Drawing.Point(296, 28);
             this.labelHeader.Name = "labelHeader";
-            this.labelHeader.Size = new System.Drawing.Size(239, 34);
+            this.labelHeader.Size = new System.Drawing.Size(291, 45);
             this.labelHeader.TabIndex = 0;
             this.labelHeader.Text = "Student System";
             // 
@@ -116,7 +116,7 @@
             this.groupBox2.Controls.Add(this.labelStudentInfo);
             this.groupBox2.Location = new System.Drawing.Point(-1, 161);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(341, 383);
+            this.groupBox2.Size = new System.Drawing.Size(356, 473);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
@@ -130,7 +130,7 @@
             this.buttonCancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.buttonCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
             this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCancel.Location = new System.Drawing.Point(230, 291);
+            this.buttonCancel.Location = new System.Drawing.Point(245, 342);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(86, 30);
             this.buttonCancel.TabIndex = 8;
@@ -146,7 +146,7 @@
             this.buttonDelete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.buttonDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
             this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDelete.Location = new System.Drawing.Point(126, 291);
+            this.buttonDelete.Location = new System.Drawing.Point(131, 342);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(86, 30);
             this.buttonDelete.TabIndex = 7;
@@ -160,52 +160,52 @@
             this.buttonAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdd.Image = global::Students.Properties.Resources.baseline_add_white_24dp;
-            this.buttonAdd.Location = new System.Drawing.Point(23, 291);
+            this.buttonAdd.Location = new System.Drawing.Point(20, 342);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(86, 30);
             this.buttonAdd.TabIndex = 6;
             this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // labelEmail
             // 
             this.labelEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelEmail.AutoSize = true;
-            this.labelEmail.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEmail.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEmail.ForeColor = System.Drawing.Color.Navy;
-            this.labelEmail.Location = new System.Drawing.Point(176, 231);
+            this.labelEmail.Location = new System.Drawing.Point(184, 270);
             this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(48, 18);
+            this.labelEmail.Size = new System.Drawing.Size(44, 17);
             this.labelEmail.TabIndex = 10;
             this.labelEmail.Text = "Email";
             // 
             // Email
             // 
-            this.Email.Location = new System.Drawing.Point(178, 250);
+            this.Email.Location = new System.Drawing.Point(186, 287);
             this.Email.Multiline = true;
             this.Email.Name = "Email";
             this.Email.Size = new System.Drawing.Size(145, 23);
             this.Email.TabIndex = 5;
             this.Email.TextChanged += new System.EventHandler(this.Email_TextChanged);
-            this.Email.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Email_KeyPress);
             // 
             // labelId
             // 
             this.labelId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelId.AutoSize = true;
-            this.labelId.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelId.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelId.ForeColor = System.Drawing.Color.Navy;
-            this.labelId.Location = new System.Drawing.Point(15, 187);
+            this.labelId.Location = new System.Drawing.Point(15, 227);
             this.labelId.Name = "labelId";
-            this.labelId.Size = new System.Drawing.Size(88, 18);
+            this.labelId.Size = new System.Drawing.Size(75, 17);
             this.labelId.TabIndex = 8;
             this.labelId.Text = "Student Id";
             this.labelId.Click += new System.EventHandler(this.label7_Click);
             // 
             // IdStudent
             // 
-            this.IdStudent.Location = new System.Drawing.Point(18, 208);
+            this.IdStudent.Location = new System.Drawing.Point(18, 245);
             this.IdStudent.Multiline = true;
             this.IdStudent.Name = "IdStudent";
             this.IdStudent.Size = new System.Drawing.Size(145, 23);
@@ -216,7 +216,7 @@
             // TextBoxLastName
             // 
             this.TextBoxLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxLastName.Location = new System.Drawing.Point(18, 250);
+            this.TextBoxLastName.Location = new System.Drawing.Point(18, 287);
             this.TextBoxLastName.Multiline = true;
             this.TextBoxLastName.Name = "TextBoxLastName";
             this.TextBoxLastName.Size = new System.Drawing.Size(145, 23);
@@ -227,7 +227,7 @@
             // TextBoxName
             // 
             this.TextBoxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxName.Location = new System.Drawing.Point(178, 208);
+            this.TextBoxName.Location = new System.Drawing.Point(186, 245);
             this.TextBoxName.Multiline = true;
             this.TextBoxName.Name = "TextBoxName";
             this.TextBoxName.Size = new System.Drawing.Size(145, 23);
@@ -240,11 +240,11 @@
             this.labelLastName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelLastName.AutoSize = true;
-            this.labelLastName.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLastName.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLastName.ForeColor = System.Drawing.Color.Navy;
-            this.labelLastName.Location = new System.Drawing.Point(15, 231);
+            this.labelLastName.Location = new System.Drawing.Point(15, 270);
             this.labelLastName.Name = "labelLastName";
-            this.labelLastName.Size = new System.Drawing.Size(80, 18);
+            this.labelLastName.Size = new System.Drawing.Size(78, 17);
             this.labelLastName.TabIndex = 5;
             this.labelLastName.Text = "Last Name";
             // 
@@ -253,11 +253,11 @@
             this.labelName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelName.AutoSize = true;
-            this.labelName.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelName.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelName.ForeColor = System.Drawing.Color.Navy;
-            this.labelName.Location = new System.Drawing.Point(176, 189);
+            this.labelName.Location = new System.Drawing.Point(184, 228);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(40, 18);
+            this.labelName.Size = new System.Drawing.Size(46, 17);
             this.labelName.TabIndex = 4;
             this.labelName.Text = "Name";
             // 
@@ -266,9 +266,9 @@
             this.ProfilePhoto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ProfilePhoto.Controls.Add(this.PictureBoxPhoto);
-            this.ProfilePhoto.Location = new System.Drawing.Point(93, 31);
+            this.ProfilePhoto.Location = new System.Drawing.Point(92, 41);
             this.ProfilePhoto.Name = "ProfilePhoto";
-            this.ProfilePhoto.Size = new System.Drawing.Size(157, 157);
+            this.ProfilePhoto.Size = new System.Drawing.Size(172, 157);
             this.ProfilePhoto.TabIndex = 1;
             this.ProfilePhoto.TabStop = false;
             this.ProfilePhoto.Enter += new System.EventHandler(this.ProfilePhoto_Enter);
@@ -276,7 +276,7 @@
             // PictureBoxPhoto
             // 
             this.PictureBoxPhoto.Image = global::Students.Properties.Resources.llama_animal;
-            this.PictureBoxPhoto.Location = new System.Drawing.Point(14, 15);
+            this.PictureBoxPhoto.Location = new System.Drawing.Point(21, 15);
             this.PictureBoxPhoto.Name = "PictureBoxPhoto";
             this.PictureBoxPhoto.Size = new System.Drawing.Size(130, 130);
             this.PictureBoxPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -289,11 +289,11 @@
             this.labelStudentInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelStudentInfo.AutoSize = true;
-            this.labelStudentInfo.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStudentInfo.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelStudentInfo.ForeColor = System.Drawing.Color.Navy;
-            this.labelStudentInfo.Location = new System.Drawing.Point(91, 10);
+            this.labelStudentInfo.Location = new System.Drawing.Point(98, 10);
             this.labelStudentInfo.Name = "labelStudentInfo";
-            this.labelStudentInfo.Size = new System.Drawing.Size(160, 18);
+            this.labelStudentInfo.Size = new System.Drawing.Size(157, 19);
             this.labelStudentInfo.TabIndex = 0;
             this.labelStudentInfo.Text = "Student Information";
             // 
@@ -304,9 +304,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.BackColor = System.Drawing.Color.White;
             this.groupBox3.Controls.Add(this.labelStudentList);
-            this.groupBox3.Location = new System.Drawing.Point(346, 161);
+            this.groupBox3.Location = new System.Drawing.Point(361, 161);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(499, 383);
+            this.groupBox3.Size = new System.Drawing.Size(484, 454);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             // 
@@ -314,11 +314,11 @@
             // 
             this.labelStudentList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.labelStudentList.AutoSize = true;
-            this.labelStudentList.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStudentList.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelStudentList.ForeColor = System.Drawing.Color.Navy;
-            this.labelStudentList.Location = new System.Drawing.Point(199, 10);
+            this.labelStudentList.Location = new System.Drawing.Point(192, 10);
             this.labelStudentList.Name = "labelStudentList";
-            this.labelStudentList.Size = new System.Drawing.Size(104, 18);
+            this.labelStudentList.Size = new System.Drawing.Size(98, 19);
             this.labelStudentList.TabIndex = 1;
             this.labelStudentList.Text = "Student List";
             // 
@@ -343,17 +343,15 @@
             this.TextBoxSerch.Name = "TextBoxSerch";
             this.TextBoxSerch.Size = new System.Drawing.Size(208, 23);
             this.TextBoxSerch.TabIndex = 1;
-            this.TextBoxSerch.TextChanged += new System.EventHandler(this.TextBoxSerch_TextChanged);
-            this.TextBoxSerch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxSerch_KeyPress);
             // 
             // labelSerch
             // 
             this.labelSerch.AutoSize = true;
-            this.labelSerch.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSerch.Font = new System.Drawing.Font("Yu Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSerch.ForeColor = System.Drawing.Color.Navy;
             this.labelSerch.Location = new System.Drawing.Point(433, 20);
             this.labelSerch.Name = "labelSerch";
-            this.labelSerch.Size = new System.Drawing.Size(60, 22);
+            this.labelSerch.Size = new System.Drawing.Size(65, 25);
             this.labelSerch.TabIndex = 0;
             this.labelSerch.Text = "Serch";
             // 
@@ -363,7 +361,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(843, 540);
+            this.ClientSize = new System.Drawing.Size(843, 611);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);

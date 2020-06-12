@@ -23,7 +23,12 @@ namespace Students
             listTextBox.Add(TextBoxName);
             listTextBox.Add(TextBoxLastName);
             listTextBox.Add(Email);
-            student = new LStudents(listTextBox);
+            var listLabel = new List<Label>();
+            listLabel.Add(labelId);
+            listLabel.Add(labelName);
+            listLabel.Add(labelLastName);
+            listLabel.Add(labelEmail);
+            student = new LStudents(listTextBox, listLabel);
         }
 
         private void ProfilePhoto_Enter(object sender, EventArgs e)
@@ -136,19 +141,9 @@ namespace Students
             student.textBoxEvent.textKeyPress(e);
         }
 
-        private void Email_KeyPress(object sender, KeyPressEventArgs e)
+        private void buttonAdd_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void TextBoxSerch_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void TextBoxSerch_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
+            student.Register();
         }
     }
 }
