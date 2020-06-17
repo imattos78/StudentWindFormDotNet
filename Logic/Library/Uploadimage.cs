@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,6 +27,11 @@ namespace Logic.Library
             {
                 pictureBox.ImageLocation = fd.FileName; //ImageLocation prop have the path of our image selected to display in the PictureBox
             }
+        }
+        public byte[] ImageToByte(Image img)
+        {
+            var converter = new ImageConverter();
+            return (byte[])converter.ConvertTo(img, typeof(byte[]));
         }
     }
 }

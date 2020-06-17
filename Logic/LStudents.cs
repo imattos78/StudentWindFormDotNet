@@ -14,11 +14,13 @@ namespace Logic
     {
         private List<TextBox> listTextBox;
         private List<Label> listLabel;
+        private PictureBox image;
 
-        public LStudents(List<TextBox> listTextBox, List<Label> listLabel)
+        public LStudents(List<TextBox> listTextBox, List<Label> listLabel, object[] obj)
         {
             this.listTextBox = listTextBox;
             this.listLabel = listLabel;
+            image = (PictureBox)obj[0];
         }
         public void Register()
         {
@@ -55,6 +57,7 @@ namespace Logic
                         }
                         else
                         {
+                           var imageArray = uploadimage.ImageToByte(image.Image);
                            
                         }
 

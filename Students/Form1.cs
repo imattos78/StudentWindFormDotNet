@@ -29,7 +29,9 @@ namespace Students
             listLabel.Add(labelName);
             listLabel.Add(labelLastName);
             listLabel.Add(labelEmail);
-            student = new Logic.LStudents(listTextBox, listLabel);
+            Object[] obj = { PictureBoxPhoto };
+
+            student = new LStudents(listTextBox, listLabel, obj);
         }
 
         private void ProfilePhoto_Enter(object sender, EventArgs e)
@@ -111,7 +113,8 @@ namespace Students
             }
             else
             {
-                errorProvider1.SetError(Email, "Provide valid email address");
+                errorProvider1.SetError(Email, "Provide valid email address 'example@provider.com'");
+                labelEmail.Text = "Enter correct format";
                 labelEmail.ForeColor = Color.Red;
             }
         }
